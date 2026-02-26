@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Paradise-Nursery---React-Online-Plant-Store/static/css/main.4e4f9386.css",
+    "main.js": "/Paradise-Nursery---React-Online-Plant-Store/static/js/main.3fb69f96.js",
+    "index.html": "/Paradise-Nursery---React-Online-Plant-Store/index.html",
+    "main.4e4f9386.css.map": "/Paradise-Nursery---React-Online-Plant-Store/static/css/main.4e4f9386.css.map",
+    "main.3fb69f96.js.map": "/Paradise-Nursery---React-Online-Plant-Store/static/js/main.3fb69f96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e4f9386.css",
+    "static/js/main.3fb69f96.js"
+  ]
+}
