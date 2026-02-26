@@ -1,0 +1,381 @@
+/* ----------------- GENERAL ----------------- */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ----------------- LANDING PAGE ----------------- */
+.background-image {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 52px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px black;
+}
+
+.about-overlay {
+  max-width: 600px;
+  background: rgba(0,0,0,0.5);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.about-us-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main-button {
+  padding: 14px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+/* ----------------- NAVBAR ----------------- */
+.navbar {
+  padding: 15px 20px;
+  background-color: #2e7d32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar button {
+  padding: 6px 12px;
+  background-color: white;
+  color: #2e7d32;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+/* ----------------- FILTERS & SEARCH ----------------- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 10px;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ----------------- PRODUCT GRID ----------------- */
+.product-container h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-grid-horizontal {
+  display: flex;
+  flex-direction: column; /* vertical scroll */
+  overflow-y: auto;
+  max-height: 600px;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding-right: 10px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.product-card img:hover {
+  transform: scale(1.1);
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.product-card button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.qty-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.qty-controls button {
+  padding: 4px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ----------------- SCROLL BUTTONS ----------------- */
+.scroll-button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+/* ----------------- MODAL ----------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.modal-content img:hover {
+  transform: scale(1.05);
+}
+
+.close-modal {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ----------------- CHECKOUT PAGE ----------------- */
+.checkout-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.checkout-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.place-order-btn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .product-grid-horizontal {
+    max-height: 400px;
+  }
+}
+/* ----------------- PRODUCT GRID ----------------- */
+.product-container h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.product-grid-vertical {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two columns */
+  gap: 15px;
+  max-height: 600px;
+  overflow-y: auto; /* Vertical scroll */
+  padding: 0 10px;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.product-card img:hover {
+  transform: scale(1.1);
+}
+/* ----------------- CART PAGE ----------------- */
+.cart-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: flex-start; /* Stack items vertically if needed */
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-item div {
+  flex: 1;
+}
+
+.cart-item h3 {
+  margin: 0 0 5px;
+}
+
+.cart-item p {
+  margin: 5px 0;
+}
+
+.cart-item .qty-controls {
+  margin-top: 5px;
+}
+
+.cart-container button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
