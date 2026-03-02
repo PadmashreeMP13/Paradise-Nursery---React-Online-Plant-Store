@@ -28,5 +28,3 @@ The application allows users to browse plants, add them to a cart, update quanti
 
 ---
 
-## 📂 Project Structure
-
