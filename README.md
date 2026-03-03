@@ -12,7 +12,7 @@ Features
 - Landing page with background image
 - Product listing page with multiple plant categories
 - Add to Cart functionality using Redux
-- Increment and ➖ Decrement product quantity
+- Increment and Decrement product quantity
 - Dynamic total cost calculation
 - Shopping cart page with checkout option
 - Continue shopping functionality
